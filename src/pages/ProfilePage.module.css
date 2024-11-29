@@ -1,0 +1,124 @@
+/* src/pages/ProfilePage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #00d09e; /* Green background */
+    font-family: 'Poppins', sans-serif;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .headerContainer {
+    background-color: #00d09e; /* Green background */
+    padding: 10px 20px;
+    flex-shrink: 0;
+    min-height: 175px; /* Increased header height */
+  }
+  
+  .topRow {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  
+  .headerTitle {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+  }
+  
+  .mainContent {
+    flex: 1;
+    background-color: #f1fff3; /* White section background */
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    margin-top: -50px; /* Adjusted to reveal green background */
+    position: relative;
+    z-index: 1;
+    padding-bottom: 80px; /* Space for the navigation bar */
+  }
+  
+  .profileContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -80px; /* Adjusted to overlap header */
+  }
+  
+  .profileImageContainer {
+    position: relative;
+  }
+  
+  .profileImage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #ffffff;
+    object-fit: cover;
+  }
+  
+  .userInfo {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .userName {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333333;
+    margin: 0;
+  }
+  
+  .userID {
+    font-size: 16px;
+    color: #666666;
+    margin: 0;
+  }
+  
+  .buttonsContainer {
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  .buttonRow {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 0px;
+    background-color: #f1fff3;
+    margin-bottom: 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+  }
+  
+  .iconContainer {
+    background-color: #6db6fe;
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+  }
+  
+  .iconContainer > svg {
+    font-size: 24px;
+    color: #ffffff;
+  }
+  
+  .buttonLabel {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1E1E1E;
+  }
+  

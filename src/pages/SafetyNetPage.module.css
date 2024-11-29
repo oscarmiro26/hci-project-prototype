@@ -1,0 +1,194 @@
+/* src/pages/SafetyNetPage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #00d09e;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    overflow-y: auto;
+}
+
+.headerContainer {
+    background-color: #00d09e;
+    padding: 10px 20px;
+    flex-shrink: 0;
+    min-height: 175px;
+}
+
+.topRow {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.headerTitle {
+    flex: 1;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+}
+
+.searchContainer {
+    position: relative;
+    width: 80%;
+    margin: 20px auto 0;
+}
+
+.searchInput {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: center;
+}
+
+.searchIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #999;
+}
+
+.mainContent {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #f1fff3;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 20px;
+    margin-top: -50px;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 80px;
+}
+
+.addContactsContainer {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    margin-left: 10px;
+}
+
+.addContactsButton {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #f1fff3;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.addContactsIcon {
+    background-color: #00d09e;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.addContactsLabel {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1E1E1E;
+    margin-left: 5px;
+}
+
+.contactsContainer {
+    background-color: #e3fcee;
+    margin-top: 20px;
+    padding: 0 10px;
+    border-radius: 15px;
+}
+
+.contactRow {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #e3fcee;
+    width: 100%;
+    position: relative;
+}
+
+.contactRowSelected {
+    background-color: #d0f0e5;
+}
+
+.contactRow:not(:last-child) {
+    border-bottom: 1px solid #ccebd6;
+}
+
+.contactImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.contactName {
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    flex: 1;
+}
+
+.statusActive {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00d09e;
+}
+
+.statusInactive {
+    font-size: 16px;
+    font-weight: 100;
+    color: #000;
+}
+
+.contactActions {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contactActions button {
+    padding: 5px 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.contactActions button:hover {
+    background-color: #f0f0f0;
+}
+
+.editButton {
+    border-right: 1px solid #ccc;
+}
+
+.deleteButton {
+    color: red;
+}
+
+/* TODO: Include modal styles from ContactModal.module.css or ensure they don't conflict */

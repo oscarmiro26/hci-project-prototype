@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "title": "anxious...",
+      "description": "Let's do\n breathing exercises",
+      "imageSrc": "/src/assets/home-page-1.png" 
+    },
+    {
+      "id": 2,
+      "title": "can't sleep...",
+      "description": "Let's do the\n 4-7-8 sleep trick",
+      "imageSrc": "/src/assets/home-page-2.png" 
+    },
+    {
+      "id": 3,
+      "title": "worried...",
+      "description": "Let's write down\n our thoughts",
+      "imageSrc": "/src/assets/home-page-3.png" 
+    },
+    {
+      "id": 4,
+      "title": "stressed...",
+      "description": "Let's do yoga!",
+      "imageSrc": "/src/assets/home-page-4.png" 
+    }
+]

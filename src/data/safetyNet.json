@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "name": "Charles",
+      "status": "Active",
+      "phoneNumber": "123-456-7890",
+      "profilePic": "/src/assets/SafetyNet/1.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Harry",
+      "status": "Active",
+      "phoneNumber": "987-654-3210",
+      "profilePic": "/src/assets/SafetyNet/2.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Diana",
+      "status": "Inactive",
+      "phoneNumber": "555-555-5555",
+      "profilePic": "/src/assets/SafetyNet/3.jpeg"
+    }
+]  

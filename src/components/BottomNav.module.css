@@ -1,0 +1,44 @@
+/* src/components/BottomNav.module.css */
+
+.navContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    background-color: #f1fff3;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .navButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    color: #333333;
+  }
+  
+  .active {
+    background-color: #00d09e;
+    color: #ffffff;
+  }
+  
+  .inactive {
+    background-color: transparent;
+    color: #333333;
+  }
+  
+  .icon {
+    font-size: 24px;
+  }
+  

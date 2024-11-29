@@ -1,42 +1,89 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* src/App.css */
+
+.fixedTopRightButtons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px;
+    z-index: 1000;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Toggle Switch Styles */
+.toggleSwitch {
+    position: relative;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.toggleSwitch.public {
+    background-color: #6db6fe;
 }
 
-.card {
-  padding: 2em;
+.toggleSwitch.private {
+    background-color: #052224;
 }
 
-.read-the-docs {
-  color: #888;
+.switchBall {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    transition: left 0.2s;
+    left: 2px;
+}
+
+.toggleSwitch.private .switchBall {
+    left: 62px;
+}
+
+.switchText {
+    position: absolute;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    transition: margin-left 0.2s;
+}
+
+.publicText {
+    margin-left: 32px;
+}
+
+.privateText {
+    margin-left: 10px;
+}
+
+/* Notification Button Styles */
+.notificationButton {
+    background-color: #dff7e2;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #00d09e;
+}
+
+.notificationIcon {
+    font-size: 20px;
+}
+
+
+
+.bottomNavWrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
 }

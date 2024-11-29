@@ -1,0 +1,24 @@
+/* src/pages/LoadingPage.css */
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #00d09e;
+    font-family: 'Arial', sans-serif;
+}
+
+.logo img {
+    text-align: "center",
+}
+
+.app-name {
+    margin-top: 20px;
+    font-size: 52px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    line-height: 57px;
+    color: white;
+    text-align: center;
+}
