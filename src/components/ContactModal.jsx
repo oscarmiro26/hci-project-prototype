@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import styles from './ContactModal.module.css';
 
-const ContactModal = ({ isOpen, onClose, onSave, contact }) => {
+const ContactModal = ({ isOpen, onClose, onSave, contact, lastId }) => {
     const [name, setName] = useState('');
     const [status, setStatus] = useState('Active');
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -27,7 +27,7 @@ const ContactModal = ({ isOpen, onClose, onSave, contact }) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newContact = {
-            id: contact ? contact.id : Date.now(),
+            id: contact ? contact.id : lastId,
             name,
             status,
             phoneNumber,

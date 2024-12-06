@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import styles from "./ProfilePage.module.css";
 
-const ProfilePage = ({ setCurrentPage }) => {
+const ProfilePage = () => {
     const { name, id, profilePic } = userProfileData;
 
     const handleButtonClick = (label) => {

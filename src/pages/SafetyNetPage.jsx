@@ -9,7 +9,7 @@ import profilePic1 from '../assets/SafetyNet/1.jpeg';
 import profilePic2 from '../assets/SafetyNet/2.jpeg';
 import profilePic3 from '../assets/SafetyNet/3.jpeg';
 
-const SafetyNetPage = ({ setCurrentPage }) => {
+const SafetyNetPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
     const [contacts, setContacts] = useState([
         {
@@ -158,7 +158,7 @@ const SafetyNetPage = ({ setCurrentPage }) => {
 
                 {/* Contacts Section */}
                 <div className={styles.contactsContainer}>
-                    {filteredContacts.map((contact) => (
+                    {filteredContacts.map((contact) => ( 
                         <div
                             key={contact.id}
                             className={`${styles.contactRow} ${selectedContactId === contact.id ? styles.contactRowSelected : ''
@@ -174,6 +174,7 @@ const SafetyNetPage = ({ setCurrentPage }) => {
                                 alt={contact.name}
                                 className={styles.contactImage}
                             />
+                            {console.log(contact.profilePic)}
                             <span className={styles.contactName}>{contact.name}</span>
                             <span
                                 className={
@@ -211,6 +212,7 @@ const SafetyNetPage = ({ setCurrentPage }) => {
                 onClose={handleCloseModal}
                 onSave={handleSaveContact}
                 contact={modalContact}
+                lastId={contacts[contacts.length - 1].id + 1}
             />
         </div>
     );

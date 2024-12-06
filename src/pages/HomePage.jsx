@@ -6,7 +6,7 @@ import cardsData from "../data/cardsData.json";
 import headerImage from "../assets/home-header-flipped.png";
 import styles from "./HomePage.module.css";
 
-const HomePage = ({ setCurrentPage }) => {
+const HomePage = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [selectedCard, setSelectedCard] = useState(null);
 

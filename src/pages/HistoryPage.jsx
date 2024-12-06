@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import styles from "./HistoryPage.module.css";
 import { CiSearch, CiCalendar } from "react-icons/ci";
 
-const HistoryPage = ({ setCurrentPage }) => {
+const HistoryPage = () => {
     const [activeTimeFrame, setActiveTimeFrame] = useState("Daily");
 
     // Hardcoded sleep cycle data
