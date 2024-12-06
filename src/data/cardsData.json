@@ -3,24 +3,80 @@
       "id": 1,
       "title": "anxious...",
       "description": "Let's do\n breathing exercises",
-      "imageSrc": "/src/assets/home-page-1.png" 
+      "imageSrc": "/src/assets/home-page-1.png",
+      "modalImageSrc": "/src/assets/home-page-1.png",
+      "modalHeader": "Chill",
+      "backgroundColor": "#F1FFF3",
+      "icon": "FaSpa",
+      "rows": [
+        {
+          "header": "Breathing Exercises",
+          "body": "Practice deep breathing to reduce stress."
+        },
+        {
+          "header": "Meditation",
+          "body": "Guided meditations to calm your mind."
+        }
+      ]
     },
     {
       "id": 2,
       "title": "can't sleep...",
       "description": "Let's do the\n 4-7-8 sleep trick",
-      "imageSrc": "/src/assets/home-page-2.png" 
+      "imageSrc": "/src/assets/home-page-2.png",
+      "modalImageSrc": "/src/assets/home-page-1.png",
+      "modalHeader": "Chill",
+      "backgroundColor": "#F1FFF3",
+      "icon": "FaSpa",
+      "rows": [
+        {
+          "header": "Breathing Exercises",
+          "body": "Practice deep breathing to reduce stress."
+        },
+        {
+          "header": "Meditation",
+          "body": "Guided meditations to calm your mind."
+        }
+      ]
     },
     {
       "id": 3,
       "title": "worried...",
       "description": "Let's write down\n our thoughts",
-      "imageSrc": "/src/assets/home-page-3.png" 
+      "imageSrc": "/src/assets/home-page-3.png",
+      "modalImageSrc": "path/to/modal/image2.jpg",
+      "modalHeader": "Physical Activities",
+      "backgroundColor": "#F0F0F0",
+      "icon": "FaRunning",
+      "rows": [
+        {
+          "header": "Yoga",
+          "body": "Stretch and strengthen your body."
+        },
+        {
+          "header": "Walking",
+          "body": "Enjoy a relaxing walk outdoors."
+        }
+      ]
     },
     {
       "id": 4,
       "title": "stressed...",
       "description": "Let's do yoga!",
-      "imageSrc": "/src/assets/home-page-4.png" 
+      "imageSrc": "/src/assets/home-page-4.png",
+      "modalImageSrc": "path/to/modal/image2.jpg",
+      "modalHeader": "Physical Activities",
+      "backgroundColor": "#F0F0F0",
+      "icon": "FaRunning",
+      "rows": [
+        {
+          "header": "Yoga",
+          "body": "Stretch and strengthen your body."
+        },
+        {
+          "header": "Walking",
+          "body": "Enjoy a relaxing walk outdoors."
+        }
+      ]
     }
 ]

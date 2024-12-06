@@ -11,9 +11,9 @@
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     padding: 0 20px;
     font-family: 'Poppins', sans-serif;
-  }
-  
-  .navButton {
+}
+
+.navButton {
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -26,19 +26,18 @@
     transition: all 0.3s ease;
     background-color: transparent;
     color: #333333;
-  }
-  
-  .active {
+}
+
+.active {
     background-color: #00d09e;
     color: #ffffff;
-  }
-  
-  .inactive {
+}
+
+.inactive {
     background-color: transparent;
     color: #333333;
-  }
-  
-  .icon {
+}
+
+.icon {
     font-size: 24px;
-  }
-  
+}

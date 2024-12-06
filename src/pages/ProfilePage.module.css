@@ -4,90 +4,90 @@
     display: flex;
     flex-direction: column;
     height: 100vh;
-    background-color: #00d09e; /* Green background */
+    background-color: #00d09e;
     font-family: 'Poppins', sans-serif;
     overflow-y: auto;
     position: relative;
-  }
-  
-  .headerContainer {
-    background-color: #00d09e; /* Green background */
+}
+
+.headerContainer {
+    background-color: #00d09e;
     padding: 10px 20px;
     flex-shrink: 0;
-    min-height: 175px; /* Increased header height */
-  }
-  
-  .topRow {
+    min-height: 175px;
+}
+
+.topRow {
     display: flex;
     align-items: center;
     position: relative;
-  }
+}
 
-  
-  .headerTitle {
+
+.headerTitle {
     flex: 1;
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     color: #000;
     margin: 0;
-  }
-  
-  .mainContent {
+}
+
+.mainContent {
     flex: 1;
-    background-color: #f1fff3; /* White section background */
+    background-color: #f1fff3;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     padding: 20px;
-    margin-top: -50px; /* Adjusted to reveal green background */
+    margin-top: -50px;
     position: relative;
     z-index: 1;
-    padding-bottom: 80px; /* Space for the navigation bar */
-  }
-  
-  .profileContainer {
+    padding-bottom: 80px;
+}
+
+.profileContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: -80px; /* Adjusted to overlap header */
-  }
-  
-  .profileImageContainer {
+    margin-top: -80px;
+}
+
+.profileImageContainer {
     position: relative;
-  }
-  
-  .profileImage {
+}
+
+.profileImage {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     border: 4px solid #ffffff;
     object-fit: cover;
-  }
-  
-  .userInfo {
+}
+
+.userInfo {
     text-align: center;
     margin-top: 10px;
-  }
-  
-  .userName {
+}
+
+.userName {
     font-size: 22px;
     font-weight: bold;
     color: #333333;
     margin: 0;
-  }
-  
-  .userID {
+}
+
+.userID {
     font-size: 16px;
     color: #666666;
     margin: 0;
-  }
-  
-  .buttonsContainer {
+}
+
+.buttonsContainer {
     margin-top: 20px;
     padding: 0 10px;
-  }
-  
-  .buttonRow {
+}
+
+.buttonRow {
     display: flex;
     align-items: center;
     padding: 15px;
@@ -98,9 +98,9 @@
     cursor: pointer;
     width: 100%;
     text-align: left;
-  }
-  
-  .iconContainer {
+}
+
+.iconContainer {
     background-color: #6db6fe;
     width: 50px;
     height: 50px;
@@ -109,16 +109,15 @@
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-  }
-  
-  .iconContainer > svg {
+}
+
+.iconContainer>svg {
     font-size: 24px;
     color: #ffffff;
-  }
-  
-  .buttonLabel {
+}
+
+.buttonLabel {
     font-size: 18px;
     font-weight: 500;
     color: #1E1E1E;
-  }
-  
+}

@@ -1,19 +1,24 @@
 // src/pages/HomePage.jsx
 import React, { useState } from "react";
 import Card from "../components/Card";
+import CardModal from "../components/CardModal";
 import cardsData from "../data/cardsData.json";
 import headerImage from "../assets/home-header-flipped.png";
 import styles from "./HomePage.module.css";
 
 const HomePage = ({ setCurrentPage }) => {
-    const [isPublic, setIsPublic] = useState(true);
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [selectedCard, setSelectedCard] = useState(null);
 
-    const handleToggle = () => {
-        setIsPublic(!isPublic);
+    const handleCardPress = (cardId) => {
+        const card = cardsData.find((card) => card.id === cardId);
+        setSelectedCard(card);
+        setIsModalOpen(true);
     };
 
-    const handleCardPress = (cardNumber) => {
-        console.log(`Card ${cardNumber} pressed`);
+    const handleCloseModal = () => {
+        setIsModalOpen(false);
+        setSelectedCard(null);
     };
 
     return (
@@ -53,6 +58,14 @@ const HomePage = ({ setCurrentPage }) => {
                     ))}
                 </div>
             </main>
+
+            {/* Card Modal */}
+            {isModalOpen && selectedCard && (
+                <CardModal
+                    card={selectedCard}
+                    onClose={handleCloseModal}
+                />
+            )}
         </div>
     );
 };
