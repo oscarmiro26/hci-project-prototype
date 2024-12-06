@@ -30,7 +30,7 @@ const CardModal = ({ card, onClose }) => {
                 {IconComponent && <IconComponent size={40} />}
               </div>
               <div className={styles.buttonText}>
-                <span className={styles.buttonHeader}>{row.header}</span>
+                <span className={styles.buttonHeader}>{row.header}</span><br />
                 <span className={styles.buttonBody}>{row.body}</span>
               </div>
             </button>
