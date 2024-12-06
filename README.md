@@ -1,4 +1,4 @@
-# My React Application
+# Easi App
 
 This application is a multi-page React-based project implementing our App proposal design for the LH HCI final project. It includes a Home page with card-based navigation and modals, a History page for displaying time-based data visualizations and sleep cycle information, a SafetyNet page for managing contacts and editing their details, and a profile page for a user to customize and manage their information.
 
